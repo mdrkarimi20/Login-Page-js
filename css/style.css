@@ -1,0 +1,288 @@
+@font-face {
+    font-family: shabnam;
+    src: url('../fonts/Shabnam-WOL.eot'), url('../fonts/Shabnam-WOL.woff2') format('woff2'), url('../fonts/Shabnam-WOL.woff') format('woff'), url('../fonts/Shabnam-WOL.ttf') format('truetype');
+    font-weight: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    direction: rtl;
+    font-family: shabnam;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+@media only screen and (max-width: 992px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+.right-side {
+    width: 45%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-side form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.right-side h1 {
+    font-size: 15px;
+    position: relative;
+    left: 173px;
+    bottom: 70px;
+    color: rgb(0, 132, 255);
+}
+
+.right-side h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    margin-left: 220px;
+}
+
+.right-side h4 {
+    margin-bottom: 15px;
+    font-size: 15px;
+    margin-left: 45px;
+    color: #d6d6d6;
+}
+
+.name {
+    position: absolute;
+    left: 37%;
+    top: 47%;
+    border-bottom: solid 1px #8400ff !important;
+    color: #8400ff !important;
+}
+
+.ramz {
+    position: absolute;
+    left: 37%;
+    top: 57%;
+}
+
+.Security {
+    position: relative;
+    left: 85px;
+    width: 40% !important;
+}
+
+.security-random {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.security-random img {
+    position: relative;
+    bottom: 80px;
+    right: 120px;
+}
+
+.right-side form input {
+    width: 70%;
+    margin: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-bottom: solid 1px #b5b5b5;
+    font-family: shabnam;
+}
+
+::placeholder {
+    color: rgb(214, 214, 214);
+}
+
+.fa-user:before {
+    color: rgb(132, 0, 255);
+}
+
+.right-side form input.name {
+    border-bottom: solid 1px #b5b5;
+}
+
+.right-side form input[type='submit'] {
+    width: 70%;
+    background-color: #1d89e4;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    position: relative;
+    bottom: 30px;
+}
+
+.fa,
+.fas {
+    position: relative;
+    right: 180px;
+    bottom: 40px;
+    color: rgb(214, 214, 214);
+}
+
+.fa-th:before {
+    margin-left: 340px;
+}
+
+.fa-sync:before {
+    content: "\f021";
+    position: relative;
+    left: 50px;
+    bottom: 40px;
+}
+
+.remember {
+    display: flex;
+    flex-direction: column;
+}
+
+.remember label input {
+    width: 20px;
+    float: right;
+    margin: 0 5px 0;
+}
+
+.right-side.check {
+    position: absolute;
+    left: 13%;
+}
+
+.right-side label {
+    font-size: 9px;
+    position: relative;
+    left: 158px;
+    bottom: 15px;
+    color: #d6d6d6;
+}
+
+.right-side a {
+    font-size: 9px;
+    margin-right: 15px;
+    transition: 30ms;
+}
+
+.left-side {
+    width: 55%;
+    height: 100vh;
+    background: linear-gradient(45deg, rgb(43, 170, 255), rgb(2, 255, 221));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.left-side .radar-angle {
+    transform-origin: bottom left;
+    animation: radar-angle 5s infinite linear;
+    position: absolute;
+    bottom: 50vh;
+    left: 30vw;
+    opacity: 0.7;
+}
+
+@keyframes radar-angle {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.wave .circle {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    background-color: #b4f8f8;
+    border: .3px solid #b0f5f5;
+    border-radius: 50%;
+    animation: circle 6s linear infinite;
+    opacity: 0;
+}
+
+.wave span:nth-child(1) {
+    animation-delay: 1s;
+}
+
+.wave span:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.wave span:nth-child(3) {
+    animation-delay: 3s;
+}
+
+.wave span:nth-child(4) {
+    animation-delay: 4s;
+}
+
+.wave span:nth-child(5) {
+    animation-delay: 5s;
+}
+
+.wave span:nth-child(6) {
+    animation-delay: 6s;
+}
+
+@keyframes circle {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    25% {
+        transform: scale(0);
+        opacity: 0.3;
+    }
+    50% {
+        transform: scale(1);
+        opacity: .7;
+    }
+    75% {
+        transform: scale(1.5);
+        opacity: 0.3;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+.left-side .wave {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+}
+
+.left-side .wave img {
+    width: 45%;
+    height: 100%;
+    z-index: 50;
+}
+
+.left-side h3 {
+    position: absolute;
+    bottom: 5px;
+    color: #f4ffff;
+}
