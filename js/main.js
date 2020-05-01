@@ -38,7 +38,6 @@ let form = VueJS.createElement("form", { method: "post", action: "http://your-we
 let rightSide = VueJS.createElement("div", { className: "right-side" }, [h1, h3, h4, form]);
 
 
-
 let Multi = VueJS.createElement("h3", {}, "Multi Anti-Virus & Cybersecurity");
 let Radar = VueJS.createElement("img", {
     src: "./img/radar-angle.png",
