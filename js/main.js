@@ -40,7 +40,24 @@ let rightSide = VueJS.createElement("div", { className: "right-side" }, [h1, h3,
 
 
 let Multi = VueJS.createElement("h3", {}, "Multi Anti-Virus & Cybersecurity");
-let leftSide = VueJS.createElement("div", { className: "left-side" }, [Multi]);
+let Radar = VueJS.createElement("img", {
+    src: "./img/radar-angle.png",
+    class: "radar-angle",
+    alt: "radar-angle"
+});
+let logo = VueJS.createElement("img", {
+    src: "./img/logo.png",
+    alt: "logo"
+});
+let radarAngle = VueJS.createElement("span", { class: "radar-angle" });
+let circle1 = VueJS.createElement("span", { class: "circle" });
+let circle2 = VueJS.createElement("span", { class: "circle" });
+let circle3 = VueJS.createElement("span", { class: "circle" });
+let circle4 = VueJS.createElement("span", { class: "circle" });
+let circle5 = VueJS.createElement("span", { class: "circle" });
+let circle6 = VueJS.createElement("span", { class: "circle" });
+let wave = VueJS.createElement("div", { class: "wave" }, [logo, radarAngle, circle1, circle2, circle3, circle4, circle5, circle6]);
+let leftSide = VueJS.createElement("div", { className: "left-side" }, [Multi, Radar, wave]);
 
 const main = VueJS.createElement("div", { className: "container" }, [rightSide, leftSide]);
 VueJS.export("root", main);
